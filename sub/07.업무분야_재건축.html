@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- 메타태그 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="subject" content="">
+	<meta name="keyword" content="">
+	<meta name="description" content="">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:domain" content="">
+
+	<meta property="og:site_name" content="$subject">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+
+	<!-- 타이틀 -->
+	<title>재건축</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link rel="stylesheet" href="../css/fullpage.css" />
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- 스크립트 -->
+	<script src="../js/jQuery.js"></script>
+	<script src="../js/fullpage.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/common.js"></script>
+
+	<!-- HTML Include 개발시 제거 -->
+	<script>
+		function includeHTML() {
+			var z, i, elmnt, file, xhttp;
+			/* Loop through a collection of all HTML elements: */
+			z = document.getElementsByTagName("*");
+			for (i = 0; i < z.length; i++) {
+				elmnt = z[i];
+				/*search for elements with a certain atrribute:*/
+				file = elmnt.getAttribute("w3-include-html");
+				if (file) {
+					/* Make an HTTP request using the attribute value as the file name: */
+					xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function () {
+						if (this.readyState == 4) {
+							if (this.status == 200) {
+								elmnt.innerHTML = this.responseText;
+							}
+							if (this.status == 404) {
+								elmnt.innerHTML = "Page not found.";
+							}
+							/* Remove the attribute, and call this function once more: */
+							elmnt.removeAttribute("w3-include-html");
+							includeHTML();
+						}
+					}
+					xhttp.open("GET", file, true);
+					xhttp.send();
+					/* Exit the function: */
+					return;
+				}
+			}
+		}
+	</script>
+	<!--//  HTML Include 개발시 제거 -->
+</head>
+
+
+<body>
+	<div id="wrap">
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="../include/Header.html"></div>
+		<!-- // HEADER INCLUDE -->
+
+		<!-- 컨텐츠 -->
+		<main id="page-container" class="sub-container">
+			<!-- 서브 비주얼 -->
+			<div class="sub-visual">
+				<figure class="figure">
+					<img src="/images/sub/sub-visual.jpg" class="figure-img img-fluid" alt="">
+					<figcaption class="figure-caption">
+						<strong>재건축</strong>
+						<span>법무법인 소빅은 어떤 상황에서도 의뢰인의 편에 서겠습니다.</span>
+					</figcaption>
+				</figure>
+			</div>
+
+			<!-- 페이지 내용 -->
+			<div class="sub-contents">
+				<div class="specialty-wrap">
+					<div class="container">
+						<div class="page-title">
+							<h3><strong>재건축</strong></h3>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="panel-group" id="accordion">
+									<div class="panel panel-default">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" class="">재건축사업</a>
+										</h4>
+										<div id="collapse1" class="panel-collapse collapse in" aria-expanded="true">
+											<h5 class="first">재건축사업이란?</h5>
+											<p class="top">
+												“재건축사업”이란 정비기반시설은 양호하나 노후·불량건축물에 해당하는 공동주택이 밀집한 지역에서 주거환경을 개선하기 위한
+												사업으로서, 「도시 및 주거환경정비법」에 따른 정비사업 중의 하나를 말합니다(「도시 및 주거환경정비법」
+												제2조제2호다목).
+											</p>
+											<h5>※ “소규모재건축사업”과의 구분</h5>
+											<p class="top">
+												“소규모재건축사업”이란 정비기반시설이 양호한 지역에서 소규모로 공동주택을 재건축하기 위하여 「빈집 및 소규모주택 정비에
+												관한 특례법」에서 정한 절차에 따라 다음의 지역에서 시행하는 정비사업을 의미하며, 「도시 및 주거환경정비법」에 따른
+												재건축사업과는 구분됩니다(「빈집 및 소규모주택 정비에 관한 특례법」 제2조제1항제3호 참조 및 「빈집 및 소규모주택
+												정비에 관한 특례법 시행령」 제3조제3호).
+											</p>
+											<p class="top">
+												해당지역: 「도시 및 주거환경정비법」 제2조제7호의 주택단지로서 다음의 요건을 모두 충족한 지역
+											</p>
+											<p class="bottom">
+												<i class="fa fa-caret-right"></i> 해당 사업시행구역의 면적이 1만㎡ 미만일 것<br>
+												<i class="fa fa-caret-right"></i> 노후·불량건축물의 수가 해당 사업시행구역 전체 건축물 수의 2/3 이상일 것<br>
+												<i class="fa fa-caret-right"></i> 기존주택의 세대수가 200세대 미만일 것
+											</p>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false">동의서 작성방법 및 동의요건 </a>
+										</h4>
+										<div id="collapse2" class="panel-collapse collapse" aria-expanded="false">
+											<div class="panel-body">
+												<h5 class="first">작성방법</h5>
+												<p class="top">
+													동의는 서면동의서에 토지등소유자가 성명을 적고 지장(指章)을 날인하는 방법으로 하며, 주민등록증, 여권 등 신원을 확인할
+													수 있는 신분증명서의 사본을 첨부해야 합니다(「도시 및 주거환경정비법」 제36조제1항).
+												</p>
+												<p class="mid">
+													<i class="fa fa-caret-right"></i> 이 때 서면동의서는 시장·군수등이 검인(檢印)한 서면동의서를
+													사용해야 하며, 검인을 받지 않은 서면동의서는 효력이 발생하지 않습니다(「도시 및 주거환경정비법」 제36조제3항).
+												</p>
+												<p class="top">
+													토지등소유자가 해외에 장기체류하거나 법인인 경우 등 불가피한 사유가 있다고 시장·군수등이 인정하는 경우에는 토지등소유자의
+													인감도장을 찍은 서면동의서에 해당 인감증명서를 첨부하는 방법으로 할 수 있습니다(「도시 및 주거환경정비법」
+													제36조제2항).
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false">동의자 수 산정방식 </a>
+										</h4>
+										<div id="collapse3" class="panel-collapse collapse" aria-expanded="false">
+											<div class="panel-body">
+												<h5 class="first">산정방식</h5>
+												<p class="top">
+													재건축사업의 경우 다음의 기준에 따라 토지등소유자의 동의자 수를 산정합니다(「도시 및 주거환경정비법」
+													제31조제2항, 제36조제4항 및 「도시 및 주거환경정비법 시행령」 제33조제1항제2호부터
+													제4호까지).
+												</p>
+												<h5>산정기준</h5>
+												<p class="bottom">
+													▪ 소유권 또는 구분소유권을 여럿이서 공유하는 경우에는 그 여럿을 대표하는 1인을 토지등소유자로 산정할 것
+													<br>
+													▪ 1인이 둘 이상의 소유권 또는 구분소유권을 소유하고 있는 경우에는 소유권 또는 구분소유권의 수에 관계없이 토지등소유자를
+													1인으로 산정할 것
+													<br>
+													▪ 둘 이상의 소유권 또는 구분소유권을 소유한 공유자가 동일한 경우에는 그 공유자 여럿을 대표하는 1인을 토지등소유자로 할
+													것
+													<br>
+													▪ 토지등기부등본·건물등기부등본·토지대장 및 건축물관리대장에 소유자로 등재될 당시 주민등록번호의 기록이 없고 기록된 주소가
+													현재 주소와 다른 경우로서 소재가 확인되지 아니한 자는 토지등소유자의 수 또는 공유자 수에서 제외할 것
+												</p>
+												<h5>동의의제</h5>
+												<p class="top">
+													추진위원회의 구성에 동의한 토지등소유자는 조합의 설립에 동의한 것으로 봄(다만, 조합설립인가를 신청하기
+													전에 시장·군수등 및 추진위원회에 조합설립에 대한 반대의 의사표시를 한 경우는 그렇지 않음)
+												</p>
+												<p class="top">
+													추진위원회의 구성 또는 조합의 설립에 동의한 자로부터 토지 또는 건축물을 취득한 자는 추진위원회의 구성 또는 조합의 설립에
+													동의한 것으로 볼 것
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+												href="#collapse4" aria-expanded="false">동의의 철회 또는 반대의사의 표시</a>
+										</h4>
+										<div id="collapse4" class="panel-collapse collapse" aria-expanded="false">
+											<div class="panel-body">
+												<h5 class="first">철회 또는 반대의사의 표시기준</h5>
+												<p class="top">
+													토지등소유자의 동의의 철회 또는 반대의사 표시의 시기 및 방법 등은 다음의 기준에 따릅니다(「도시 및 주거환경정비법
+													시행령」 제33조제2항부터 제4항까지).
+												</p>
+												<h5>표시시기</h5>
+												<p class="bottom">
+													<strong>해당 동의에 따른 인·허가 등을 신청하기 전까지 가능함</strong>
+													<br>
+													<strong>다음의 경우는 최초로 동의한 날부터 30일까지만 철회가능함</strong>
+													<br>
+													1. 정비구역의 해제에 대한 동의
+													<br>
+													2. 조합설립에 대한 동의(동의 후 「도시 및 주거환경정비법 시행령」 제30조제2항 각 호의 사항이
+													변경되지 않은 경우만 해당)
+													<br>
+													<i class="fa fa-caret-right"></i> 다만, 조합설립에 대한 동의는 최초로 동의한 날부터 30일이
+													지나지 않았더라도 조합설립을 위한 창립총회 후에는 철회가 불가능함
+												</p>
+												<h5>표시방법</h5>
+												<p class="top">
+													철회서에 토지등소유자가 성명을 적고 지장(指章)을 날인한 후 주민등록증 및 여권 등 신원을 확인할 수 있는
+													신분증명서 사본을 첨부하여 동의의 상대방 및 시장·군수등에게 내용증명의 방법으로 발송해야 함
+												</p>
+												<p class="mid">
+													※ 시장·군수등이 철회서를 받은 때에는 지체없이 동의의 상대방에게 철회서가 접수된 사실을 통지해야 함
+												</p>
+												<h5>효력발생</h5>
+												<p class="top">
+													철회서가 동의의 상대방에게 도달한 때 또는 시장·군수등이 동의의 상대방에게 철회서가 접수된 사실을 통지한 때 중 빠른 때에
+													효력이 발생함
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+												href="#collapse5" aria-expanded="false">조합원</a>
+										</h4>
+										<div id="collapse5" class="panel-collapse collapse" aria-expanded="false">
+											<div class="panel-body">
+												<h5 class="first">조합원의 자격</h5>
+												<p class="top">
+													재건축사업의 조합원(사업시행자가 신탁업자인 경우에는 위탁자를 말함)은 토지등소유자(재건축사업에 동의한 자만 해당)로 하되,
+													다음의 어느 하나에 해당하는 때에는 그 여러 명을 대표하는 1명을 조합원으로 봅니다(「도시 및 주거환경정비법」
+													제39조제1항 본문).
+												</p>
+												<p class="top">
+													<i class="fa fa-caret-right"></i> 다만, 「국가균형발전 특별법」 제18조에 따른
+													공공기관지방이전 및 혁신도시 활성화를 위한 시책 등에 따라 이전하는 공공기관이 소유한 토지 또는 건축물을 양수한 경우
+													양수한 자(공유의 경우 대표자 1명을 말함)를 조합원으로 봅니다(「도시 및 주거환경정비법」 제39조제1항 단서).
+												</p>
+												<h5>투기과열지구에서의 조합원</h5>
+												<p class="mid">
+													투기과열지구로 지정된 지역에서 재건축사업을 시행하는 경우에는 조합설립인가 후 재건축사업의 건축물 또는 토지를
+													양수(매매·증여, 그 밖의 권리의 변동을 수반하는 일체의 행위를 포함하되, 상속·이혼으로 인한 양도·양수의 경우는 제외)한
+													자는 조합원이 될 수 없습니다. 다만, 양도인이 다음의 어느 하나에 해당하는 경우 그 양도인으로부터 그 건축물 또는 토지를
+													양수한 자는 조합원이 될 수 있습니다(「도시 및 주거환경정비법」 제39조제2항).
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+												href="#collapse6" aria-expanded="false">임원</a>
+										</h4>
+										<div id="collapse6" class="panel-collapse collapse" aria-expanded="false">
+											<div class="panel-body">
+												<h5 class="first">임원의 구성 등</h5>
+												<p class="top">
+													조합임원의 구성, 임기, 선출방법, 지위 및 결격사유 등은 다음과 같습니다(「도시 및 주거환경정비법」 제41조부터
+													제43조까지 및 「도시 및 주거환경정비법 시행령」 제40조).
+												</p>
+												<p class="top">임원구성</p>
+												<p class="bottom">
+													▪ 조합장 1명 <br>
+													▪ 이사 3명 이상, 감사 1명 이상 3명 이하의 범위에서 정관으로 정함 <br>
+													  ※ 다만, 토지등소유자의 수가 100인을 초과하는 경우 이사의 수는 5명 이상에서 정관으로 정함
+												</p>
+												<p class="top">임원임기</p>
+												<p class="bottom">
+													▪ 3년 이하의 범위에서 정관으로 정함 <br>
+													▪ 연임가능
+												</p>
+												<p class="top">선출방법</p>
+												<p class="bottom">
+													▪ 정관으로 정함 <br>
+													※ 시장·군수등은 조합임원이 사임, 해임, 임기만료, 그 밖에 불가피한 사유 등으로 직무를 수행할 수 없는 때부터
+													6개월 이상 선임되지 않은 경우 시·도조례로 정하는 바에 따라 변호사·회계사·기술사 등으로서 「도시 및
+													주거환경정비법 시행령」 제41조제1항으로 정하는 요건을 갖춘 자를 전문조합관리인으로 선정하여 조합임원의 업무를 대행하게 할
+													수 있음
+												</p>
+												<p class="top">임원지위</p>
+												<p class="mid">
+													▪ 미성년자·피성년후견인 또는 피한정후견인 <br>
+													▪ 파산선고를 받고 복권되지 않은 사람 <br>
+													▪ 금고 이상의 실형을 선고받고 그 집행이 종료(종료된 것으로 보는 경우를 포함)되거나 집행이 면제된 날부터 2년이
+													경과되지 않은 사람 <br>
+													▪ 금고 이상의 형의 집행유예를 받고 그 유예기간 중에 있는 사람 <br>
+													▪ 「도시 및 주거환경정비법」을 위반하여 벌금 100만원 이상의 형을 선고받고 5년이 지나지 않은 사람 <br>
+													 ※ 조합임원이 위 결격사유 중 어느 하나에 해당하게 되거나 선임 당시 그에 해당하는 사람이었음이 판명된
+													때에는 당연 퇴임하지만, 퇴임된 임원이 퇴임 전에 관여한 행위는 효력을 유지함
+												</p>
+												<p class="top">임원해임</p>
+												<p class="bottom">
+													▪ 조합원 10분의 1 이상의 요구로 소집된 총회에서 조합원 과반수의 출석과 출석 조합원 과반수의 동의를 받아 임원 해임
+													가능 <br>
+													※ 이 경우 요구자 대표로 선출된 사람이 해임 총회의 소집 및 진행을 할 때에는 조합장의 권한을 대행함
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+												href="#collapse7" aria-expanded="false">정관</a>
+										</h4>
+										<div id="collapse7" class="panel-collapse collapse" aria-expanded="false">
+											<div class="panel-body">
+												<h5 class="first">정관의 기재사항</h5>
+												<p class="top">
+													조합의 정관에는 다음의 사항이 포함되어야 합니다(「도시 및 주거환경정비법」 제40조제1항).
+												</p>
+												<p class="mid">
+													1. 조합의 명칭 및 사무소의 소재지 <br>
+													2. 조합원의 자격 <br>
+													3. 조합원의 제명·탈퇴 및 교체 <br>
+													4. 정비구역의 위치 및 면적 <br>
+													5. 조합임원의 수 및 업무의 범위 <br>
+													6. 조합임원의 권리·의무·보수·선임방법·변경 및 해임 <br>
+													7. 대의원의 수, 선임방법, 선임절차 및 대의원회의 의결방법 <br>
+													8. 조합의 비용부담 및 조합의 회계 <br>
+													9. 정비사업의 시행연도 및 시행방법 <br>
+													10. 총회의 소집 절차·시기 및 의결방법 <br>
+													11. 총회의 개최·조합원의 총회소집 요구 <br>
+													12. 「도시 및 주거환경정비법」 제73조제3항에 따른 이자 지급 <br>
+													13. 정비사업비의 부담 시기 및 절차 <br>
+													14. 정비사업이 종결된 때의 청산절차 <br>
+													15. 청산금의 징수·지급의 방법 및 절차 <br>
+													16. 시공자·설계자의 선정 및 계약서에 포함될 내용 <br>
+													17. 정관의 변경절차 <br>
+													18. 그 밖에 정비사업의 추진 및 조합의 운영을 위하여 필요한 사항으로서 「도시 및 주거환경정비법 시행령」
+													제38조로 정하는 사항
+												</p>
+												<h5>정관의 변경</h5>
+												<p class="top">
+													조합이 정관을 변경하려는 경우에는 총회를 개최하여 조합원 과반수의 찬성으로 시장·군수등의 인가를 받아야 합니다. 다만,
+													위의 2, 3, 4, 8, 13 또는 16의 경우에는 조합원 3분의 2 이상의 찬성으로 합니다(「도시 및 주거환경정비법」
+													제40조제3항).
+												</p>
+												<p class="mid">
+													<i class="fa fa-caret-right"></i> 다만, 「도시 및 주거환경정비법 시행령」 제39조에
+													따른 경미한 사항을 변경하려는 때에는 「도시 및 주거환경정비법」 또는 정관으로 정하는 방법에 따라
+													변경하고 시장·군수등에게 신고해야 합니다(「도시 및 주거환경정비법」 제40조제4항).
+												</p>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //페이지 내용 -->
+
+		</main>
+		<!-- // 컨텐츠 -->
+
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="../include/Footer.html"></div>
+		<!-- // HEADER INCLUDE -->
+	</div>
+
+	<!-- 개발시 제거 -->
+	<script>
+		includeHTML();
+	</script>
+	<!-- // 개발시 제거 -->
+
+</body>
+
+</html>

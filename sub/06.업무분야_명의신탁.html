@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- 메타태그 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="subject" content="">
+	<meta name="keyword" content="">
+	<meta name="description" content="">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:domain" content="">
+
+	<meta property="og:site_name" content="$subject">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+
+	<!-- 타이틀 -->
+	<title>명의신탁</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link rel="stylesheet" href="../css/fullpage.css" />
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- 스크립트 -->
+	<script src="../js/jQuery.js"></script>
+	<script src="../js/fullpage.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/common.js"></script>
+
+	<!-- HTML Include 개발시 제거 -->
+	<script>
+		function includeHTML() {
+			var z, i, elmnt, file, xhttp;
+			/* Loop through a collection of all HTML elements: */
+			z = document.getElementsByTagName("*");
+			for (i = 0; i < z.length; i++) {
+				elmnt = z[i];
+				/*search for elements with a certain atrribute:*/
+				file = elmnt.getAttribute("w3-include-html");
+				if (file) {
+					/* Make an HTTP request using the attribute value as the file name: */
+					xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function () {
+						if (this.readyState == 4) {
+							if (this.status == 200) {
+								elmnt.innerHTML = this.responseText;
+							}
+							if (this.status == 404) {
+								elmnt.innerHTML = "Page not found.";
+							}
+							/* Remove the attribute, and call this function once more: */
+							elmnt.removeAttribute("w3-include-html");
+							includeHTML();
+						}
+					}
+					xhttp.open("GET", file, true);
+					xhttp.send();
+					/* Exit the function: */
+					return;
+				}
+			}
+		}
+	</script>
+	<!--//  HTML Include 개발시 제거 -->
+</head>
+
+
+<body>
+	<div id="wrap">
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="../include/Header.html"></div>
+		<!-- // HEADER INCLUDE -->
+
+		<!-- 컨텐츠 -->
+		<main id="page-container" class="sub-container">
+			<!-- 서브 비주얼 -->
+			<div class="sub-visual">
+				<figure class="figure">
+					<img src="/images/sub/sub-visual.jpg" class="figure-img img-fluid" alt="">
+					<figcaption class="figure-caption">
+						<strong>명의신탁</strong>
+						<span>법무법인 소빅은 어떤 상황에서도 의뢰인의 편에 서겠습니다.</span>
+					</figcaption>
+				</figure>
+			</div>
+
+			<!-- 페이지 내용 -->
+			<div class="sub-contents">
+				<div class="specialty-wrap">
+					<div class="container">
+						<div class="page-title">
+							<h3><strong>명의신탁</strong></h3>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="panel-group" id="accordion">
+									<div class="panel panel-default">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapse1"
+												aria-expanded="false" class="collapsed">명의신탁</a>
+										</h4>
+										<div id="collapse1" class="panel-collapse collapse" aria-expanded="false" >
+											<h5 class="first">명의신탁의 의의</h5>
+											<p class="top">
+												“명의신탁”이란 부동산에 관한 소유권이나 그 밖에 물권을 보유한 자 또는 사실상 취득하거나 취득하려는 자(이하 “실권리자”라
+												함)가 타인과의 사이에서 대내적으로는 실권리자가 부동산에 관한 물권을 보유하거나 보유하기로 하고 그에 관한 등기(가등기 포함)는
+												그 타인의 명의로 하기로 하는 약정(위임·위탁매매의 형식에 의하거나 추인에 의한 경우 포함)을 말합니다(「부동산 실권리자명의
+												등기에 관한 법률」 제2조제1호 본문).
+											</p>
+											<h5>명의신탁의 제한</h5>
+											<p class="top">
+												명의신탁은 탈세나 강제집행의 회피를 위한 목적으로 악용되는 문제가 발생하여, 현재 시행중인&nbsp;「부동산 실권리자명의 등기에
+												관한 법률」에 의하여 제한을 받고 있습니다(『국가법령정보센터, 법령용어사전』 참조).
+											</p>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+												href="#collapse2" aria-expanded="false">법률의 적용범위</a>
+										</h4>
+										<div id="collapse2" class="panel-collapse collapse" aria-expanded="false">
+											<div class="panel-body">
+												<h5 class="first">적용대상</h5>
+												<p class="top">
+													「부동산 실권리자명의 등기에 관한 법률」은 부동산에 관한 소유권이나 그 밖의 물권을 보유한 자 또는 사실상 취득하거나
+													취득하려는 경우에 적용됩니다(「부동산 실권리자명의 등기에 관한 법률」 제2조제1호 본문 참조).
+
+												</p>
+												<h5>적용제외 대상</h5>
+												<p class="top">
+													다음의 경우는&nbsp;「부동산 실권리자명의 등기에 관한 법률」의 적용대상에서 제외합니다(「부동산 실권리자명의 등기에 관한
+													법률」 제2조제1호 단서).
+												</p>
+												<p class="mid">
+													<i class="fa fa-caret-right"></i> 채무의 변제를 담보하기 위하여 채권
+													<br>
+													<i class="fa fa-caret-right"></i> 부동산의 위치와 면적을 특정하여 2인 이상이 구분소유하기로
+													하는 약정을 하고 그 구분소유자의 공유로 등기하는 경우
+													<br>
+													<i class="fa fa-caret-right"></i> 「신탁법」&nbsp;또는&nbsp;「자본시장과 금융투자업에
+													관한 법률」에 따른 신탁재산인 사실을 등기한 경우
+												</p>
+												<h5>
+													종중, 배우자 및 종교단체에 대한 특례
+												</h5>
+												<p class="top">
+													다음의 어느 하나에 해당하는 경우로서 조세 포탈, 강제집행의 면탈(免脫) 또는 법령상 제한의 회피를 목적으로 하지 않는
+													경우에는&nbsp;「부동산 실권리자명의 등기에 관한 법률」 제4조부터 제7조까지 및&nbsp;「부동산 실권리자명의 등기에
+													관한 법률」 제12조제1항부터 제3항까지를 적용하지 않습니다(「부동산 실권리자명의 등기에 관한 법률」 제8조).
+												</p>
+												<p class="mid">
+													<i class="fa fa-caret-right"></i> 종중(宗中)이 보유한 부동산에 관한 물권을 종중(종중과 그
+													대표자를 같이 표시하여 등기한 경우를 포함) 외의 자의 명의로 등기한 경우
+													<br>
+													<i class="fa fa-caret-right"></i> 배우자 명의로 부동산에 관한 물권을 등기한 경우
+													<br>
+													<i class="fa fa-caret-right"></i> 종교단체의 명의로 그 산하 조직이 보유한 부동산에 관한 물권을
+													등기한 경우
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+												href="#collapse3" aria-expanded="false">명의신탁의 효력</a>
+										</h4>
+										<div id="collapse3" class="panel-collapse collapse" aria-expanded="false">
+											<div class="panel-body">
+												<h5 class="first">명의신탁약정의 무효</h5>
+												<p class="top">
+													명의신탁약정은 무효로 합니다(「부동산 실권리자명의 등기에 관한 법률」 제4조제1항).
+												</p>
+												<h5>물권변동의 무효</h5>
+												<p class="top">
+													명의신탁약정에 따른 등기로 이루어진 부동산에 관한 물권변동은 무효로 합니다. 다만, 부동산에 관한 물권을 취득하기 위한
+													계약에서 명의수탁자가 어느 한쪽 당사자가 되고 상대방 당사자는 명의신탁약정이 있다는 사실을 알지 못한 경우에는 그렇지
+													않습니다(「부동산 실권리자명의 등기에 관한 법률」 제4조제2항).
+												</p>
+												<h5>제3자에 대한 효력</h5>
+												<p class="top">
+													위의 명의신탁약정 및 물권변동의 무효는 제3자에게 대항하지 못합니다(「부동산 실권리자명의 등기에 관한 법률」
+													제4조제3항).
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //페이지 내용 -->
+
+		</main>
+		<!-- // 컨텐츠 -->
+
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="../include/Footer.html"></div>
+		<!-- // HEADER INCLUDE -->
+	</div>
+
+	<!-- 개발시 제거 -->
+	<script>
+		includeHTML();
+	</script>
+	<!-- // 개발시 제거 -->
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- 메타태그 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="subject" content="">
+	<meta name="keyword" content="">
+	<meta name="description" content="">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:domain" content="">
+
+	<meta property="og:site_name" content="$subject">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+
+	<!-- 타이틀 -->
+	<title>타이틀</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link rel="stylesheet" href="../css/fullpage.css" />
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- 스크립트 -->
+	<script src="../js/jQuery.js"></script>
+	<script src="../js/fullpage.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/common.js"></script>
+
+	<!-- HTML Include 개발시 제거 -->
+	<script>
+		function includeHTML() {
+			var z, i, elmnt, file, xhttp;
+			/* Loop through a collection of all HTML elements: */
+			z = document.getElementsByTagName("*");
+			for (i = 0; i < z.length; i++) {
+				elmnt = z[i];
+				/*search for elements with a certain atrribute:*/
+				file = elmnt.getAttribute("w3-include-html");
+				if (file) {
+					/* Make an HTTP request using the attribute value as the file name: */
+					xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function () {
+						if (this.readyState == 4) {
+							if (this.status == 200) {
+								elmnt.innerHTML = this.responseText;
+							}
+							if (this.status == 404) {
+								elmnt.innerHTML = "Page not found.";
+							}
+							/* Remove the attribute, and call this function once more: */
+							elmnt.removeAttribute("w3-include-html");
+							includeHTML();
+						}
+					}
+					xhttp.open("GET", file, true);
+					xhttp.send();
+					/* Exit the function: */
+					return;
+				}
+			}
+		}
+	</script>
+	<!--//  HTML Include 개발시 제거 -->
+</head>
+
+
+<body>
+	<div id="wrap">
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="../include/Header.html"></div>
+		<!-- // HEADER INCLUDE -->
+
+		<!-- 컨텐츠 -->
+		<main id="page-container" class="sub-container">
+			<!-- 서브 비주얼 -->
+			<div class="sub-visual">
+				<figure class="figure">
+					<img src="/images/sub/sub-visual.jpg" class="figure-img img-fluid" alt="">
+					<figcaption class="figure-caption">
+						<strong>인사말</strong>
+						<span>법무법인 소빅은 어떤 상황에서도 의뢰인편의 편에 서겠습니다.</span>
+					</figcaption>
+				</figure>
+			</div>
+
+			<!-- 페이지 내용 -->
+			<div class="sub-contents">
+				<div class="greeting-wrap">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-5">
+								<div class="img-box">
+									<img src="../images/sub/greeting.jpg" alt="이미지">
+								</div>
+							</div>
+							<div class="col-md-7">
+								<h3>안녕하세요 법무법인 소빅입니다.</h3>
+								<p>
+									저희 법무법인 소빅은<br>
+									부동산전문변호사가 풍부한 지식과 경험을 바탕으로 당사자와 충분한 소통을 거쳐,<br>
+									가장 적절한 맞춤형 전략을 마련하므로 항상 최선의 결과를 이끌어내고 있습니다.<br>
+								</p>
+								<p>
+									본 변호사는 철저한 자료 조사와 일목요연한 변론을 통해 <br>
+									위기에 처한 의뢰인에게 최선의 해결책을 제시하겠습니다. <br>
+									더불어, 명확한 법리 해석으로 의뢰인이 부당하고<br>
+									과도한 처벌을 받는 일이 없도록 하겠습니다.<br>
+								</p>
+								<p>
+									소송에 휘말린 분들이라면 언제라도 법무법인 소빅을 찾아 주십시오.<br>
+									의뢰인 한 분 한 분에게 있어 최선의 동지가 되어 드리겠습니다.
+								</p>
+								<p>감사합니다.</p>
+								<div class="sign-wrap">
+									<span>대표변호사</span>
+									<span class="name">김종성</span>
+									<span class="sign"><img src="../images/sub/sign.png" alt="사인"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //페이지 내용 -->
+
+		</main>
+		<!-- // 컨텐츠 -->
+
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="./include/Footer.html"></div>
+		<!-- // HEADER INCLUDE -->
+	</div>
+
+	<!-- 개발시 제거 -->
+	<script>
+		includeHTML();
+	</script>
+	<!-- // 개발시 제거 -->
+
+</body>
+
+</html>

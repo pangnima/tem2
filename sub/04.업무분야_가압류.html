@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- 메타태그 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="subject" content="">
+	<meta name="keyword" content="">
+	<meta name="description" content="">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:domain" content="">
+
+	<meta property="og:site_name" content="$subject">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+
+	<!-- 타이틀 -->
+	<title>업무분야</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link rel="stylesheet" href="../css/fullpage.css" />
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- 스크립트 -->
+	<script src="../js/jQuery.js"></script>
+	<script src="../js/fullpage.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/common.js"></script>
+
+	<!-- HTML Include 개발시 제거 -->
+	<script>
+		function includeHTML() {
+			var z, i, elmnt, file, xhttp;
+			/* Loop through a collection of all HTML elements: */
+			z = document.getElementsByTagName("*");
+			for (i = 0; i < z.length; i++) {
+				elmnt = z[i];
+				/*search for elements with a certain atrribute:*/
+				file = elmnt.getAttribute("w3-include-html");
+				if (file) {
+					/* Make an HTTP request using the attribute value as the file name: */
+					xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function () {
+						if (this.readyState == 4) {
+							if (this.status == 200) {
+								elmnt.innerHTML = this.responseText;
+							}
+							if (this.status == 404) {
+								elmnt.innerHTML = "Page not found.";
+							}
+							/* Remove the attribute, and call this function once more: */
+							elmnt.removeAttribute("w3-include-html");
+							includeHTML();
+						}
+					}
+					xhttp.open("GET", file, true);
+					xhttp.send();
+					/* Exit the function: */
+					return;
+				}
+			}
+		}
+	</script>
+	<!--//  HTML Include 개발시 제거 -->
+</head>
+
+
+<body>
+	<div id="wrap">
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="../include/Header.html"></div>
+		<!-- // HEADER INCLUDE -->
+
+		<!-- 컨텐츠 -->
+		<main id="page-container" class="sub-container">
+			<!-- 서브 비주얼 -->
+			<div class="sub-visual">
+				<figure class="figure">
+					<img src="/images/sub/sub-visual.jpg" class="figure-img img-fluid" alt="">
+					<figcaption class="figure-caption">
+						<strong>가압류</strong>
+						<span>법무법인 소빅은 어떤 상황에서도 의뢰인의 편에 서겠습니다.</span>
+					</figcaption>
+				</figure>
+			</div>
+
+			<!-- 페이지 내용 -->
+			<div class="sub-contents">
+				<div class="specialty-wrap">
+					<div class="container">
+						<div class="page-title">
+							<h3><strong>가압류란</strong></h3>
+							<p class="page-desc">
+								가압류란 금전채권이나 금전으로 환산할 수 있는 채권(예컨대 매매대금, 대여금, 어음금, 수표금, 양수금, 공사대금, 임료, 손해배상청구권 등)의 집행을 보전(保全)할
+								목적으로 미리 채무자의 재산을 동결(凍結)시켜 채무자로부터 그 재산에 대한 처분권을 잠정적으로 빼앗는 집행보전제도(執行保全制度)를 말합니다.
+							</p>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="panel-group" id="accordion">
+									<div class="panel panel-default">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1">가압류 목적물</a>
+										</h4>
+										<div id="collapse1" class="panel-collapse collapse">
+											<h5 class="first">가압류목적물의 특정</h5>
+											<p class="top">
+												가압류 대상 부동산은 특정할 수 있어야 합니다. <br>
+												지분 표시는 등기부에 따라 정확해야 합니다.
+											</p>
+											<h5>부동산의 합유 지분</h5>
+											<p class="top">
+												조합재산을 구성하는 개개의 재산에 대한 합유지분에 대해서는 가압류의 대상으로 할 수 없습니다. <br>
+												각 조합원의 채권자는 그 조합원이 전체로서의 조합재산에 대해 가지는 합유지분을 가압류할 수 있습니다(「민법」 제714조).</p>
+											<p class="bottom">
+												※ 이에 대해서는 대법원 2007. 11. 30. 자 2005마1130결정을 참조하세요. <br>
+												※ 조합재산에 대하여 가지는 지분에 대한 가압류 절차는 「민사집행법」 제251조에 따라 그 밖의 재산권에 대한 집행방법에
+												따릅니다.
+											</p>
+											<h5>미등기부동산</h5>
+											<p class="top">
+												미등기부동산이라도 그 부동산이 채무자의 소유이면 즉시 채무자명의로 등기할 수 있다는 것을 증명할 서류(미등기 건물인 경우에는 그
+												건물이
+												채무자의 소유임을 증명할 서류,
+												그 건물의 지번·구조·면적을 증명할 서류 및 그 건물에 관한 건축허가 또는 건축신고를 증명할 서류)를 붙여 가압류를 신청할 수
+												있습니다[「민사집행법」 제81조제1항제2호,
+												제291조 및 「미등기 건물의 처분제한등기에 관한 업무처리지침」(대법원 등기예규 제1469호, 2012. 6. 29.
+												발령·시행)].
+											</p>
+											<p class="bottom">
+												※ "부동산"이란 토지와 그 정착물을 말합니다(「민법」 제99조제1항). 이 중에서 건물과 토지는 부동산등기부에 소유권보존등기가
+												경료되어야 원칙적으로 소유권을 취득할 수 있습니다(「민법」 제186조 참조). <br>
+												'미등기부동산'이란 이러한 소유권보존등기가 경료되지 않은 토지와 건물을 말합니다.
+											</p>
+											<h5>
+												미등기건물에 대한 가압류 신청시 첨부해야 할 서류는 다음과 같습니다.
+											</h5>
+											<p class="top">
+												1. 미등기건물이 이미 사용승인을 받아 건축물대장등본을 발급받을 수 있는 경우
+											</p>
+											<p class="bottom">
+												&gt; 소유자의 주소 및 등기용등록번호증명서 <br>
+												&gt; 건축물대장등본(집합건물은 소재도·각층의 평면도·구분건물의 평면도)
+											</p>
+											<p class="top">
+												2. 건물로서의 외관을 갖추었지만 아직 사용승인을 받지 못한 경우
+											</p>
+											<p class="bottom">
+												&gt; 소유자의 주소 및 등기용등록번호증명서 <br>
+												&gt; 건물이 채무자의 소유임을 증명할 수 있는 서류 <br>
+												&gt; 건물의 소재와 지번·구조·면적을 증명할 수 있는 서류 <br>
+												&gt; 건축허가서 또는 신고서
+											</p>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2">부동산가압류신청서 작성</a>
+										</h4>
+										<div id="collapse2" class="panel-collapse collapse">
+											<div class="panel-body">
+												<h5 class="first">신청서 작성</h5>
+												<p class="top">
+													부동산가압류신청서를 작성하려는 자는 신청서에<br>
+													① 당사자(대리인이 있는 경우 대리인 포함),<br>
+													② 청구채권의 표시 및 목적물의 표시<br>
+													③ 신청의 취지,<br>
+													④ 신청의 이유,<br>
+													⑤ 관할법원,<br>
+													⑥ 소명방법 및<br>
+													⑦ 작성한 날짜를 기재하고,<br>
+													당사자 또는 대리인의 기명날인 또는 서명을 해야 합니<br>
+													(「민사집행법」 제23조제1항, 제279조, 「민사집행규칙」 제203조제2항, 「민사소송법」
+													제249조 및 제274조).
+												</p>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<!-- //accordion -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //페이지 내용 -->
+
+		</main>
+		<!-- // 컨텐츠 -->
+
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="../include/Footer.html"></div>
+		<!-- // HEADER INCLUDE -->
+	</div>
+
+	<!-- 개발시 제거 -->
+	<script>
+		includeHTML();
+	</script>
+	<!-- // 개발시 제거 -->
+
+</body>
+
+</html>

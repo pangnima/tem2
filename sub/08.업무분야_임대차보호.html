@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- 메타태그 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="subject" content="">
+	<meta name="keyword" content="">
+	<meta name="description" content="">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:domain" content="">
+
+	<meta property="og:site_name" content="$subject">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+
+	<!-- 타이틀 -->
+	<title>임대차보호</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link rel="stylesheet" href="../css/fullpage.css" />
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- 스크립트 -->
+	<script src="../js/jQuery.js"></script>
+	<script src="../js/fullpage.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/common.js"></script>
+
+	<!-- HTML Include 개발시 제거 -->
+	<script>
+		function includeHTML() {
+			var z, i, elmnt, file, xhttp;
+			/* Loop through a collection of all HTML elements: */
+			z = document.getElementsByTagName("*");
+			for (i = 0; i < z.length; i++) {
+				elmnt = z[i];
+				/*search for elements with a certain atrribute:*/
+				file = elmnt.getAttribute("w3-include-html");
+				if (file) {
+					/* Make an HTTP request using the attribute value as the file name: */
+					xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function () {
+						if (this.readyState == 4) {
+							if (this.status == 200) {
+								elmnt.innerHTML = this.responseText;
+							}
+							if (this.status == 404) {
+								elmnt.innerHTML = "Page not found.";
+							}
+							/* Remove the attribute, and call this function once more: */
+							elmnt.removeAttribute("w3-include-html");
+							includeHTML();
+						}
+					}
+					xhttp.open("GET", file, true);
+					xhttp.send();
+					/* Exit the function: */
+					return;
+				}
+			}
+		}
+	</script>
+	<!--//  HTML Include 개발시 제거 -->
+</head>
+
+
+<body>
+	<div id="wrap">
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="../include/Header.html"></div>
+		<!-- // HEADER INCLUDE -->
+
+		<!-- 컨텐츠 -->
+		<main id="page-container" class="sub-container">
+			<!-- 서브 비주얼 -->
+			<div class="sub-visual">
+				<figure class="figure">
+					<img src="/images/sub/sub-visual.jpg" class="figure-img img-fluid" alt="">
+					<figcaption class="figure-caption">
+						<strong>주택임대차보호법</strong>
+						<span>법무법인 소빅은 어떤 상황에서도 의뢰인의 편에 서겠습니다.</span>
+					</figcaption>
+				</figure>
+			</div>
+
+			<!-- 페이지 내용 -->
+			<div class="sub-contents">
+				<div class="specialty-wrap">
+					<div class="container">
+						<div class="page-title">
+							<h3><strong>부동산 임대차보호</strong></h3>
+							<p class="page-desc">「주택임대차보호법」은 주거용 건물의 임대차에 관하여 「민법」에 대한 특례를 규정함으로써 국민 주거생활의 안정을 보장함을 목적으로
+								합니다.<br>「주택임대차보호법」 제1조)</p>
+						</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="panel-group" id="accordion">
+									<div class="panel panel-default">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1">주택임대차보호법의 적용 범위</a>
+										</h4>
+										<div id="collapse1" class="panel-collapse collapse in">
+											<h5 class="first">「주택임대차보호법」의 보호대상(인적 적용범위)</h5>
+											<p class="top">
+												<i class="fa fa-caret-right"></i> 자연인 - 「주택임대차보호법」은 자연인인 국민의 주거생활의 안정을
+												보장함을 목적으로 하기 때문에,
+												그 보호 대상은 원칙적으로 대한민국의 국적을 가진 사람입니다(「주택임대차보호법」 제1조참조).
+											</p>
+											<p class="top">
+												<i class="fa fa-caret-right"></i> 외국인 및 재외동포 - 주택을 임차한 외국인이 외국인등록을 하고
+												전입신고에 준하는
+												체류지 변경신고를 했다면 예외적으로 「주택임대차보호법」의 보호 대상이 됩니다.
+												<br>
+												(「출입국관리법」 제31조, 제88조의2제2항 및 대법원 2016.10.13. 선고 2015다14136
+												판결). 
+											</p>
+											<p class="top">법인</p>
+											<p class="mid">
+												법인은 특별한 사정이 없는 한 「주택임대차보호법」의 보호를 받지 못합니다.
+												<br>
+												<i class="fa fa-caret-right"></i> 법인이 「주택임대차보호법」의 보호를 받기 위해 주민등록을
+												자신의 명의로 할 수 없을 뿐만 아니라,
+												사원 명의의 주민등록으로 대항력을 갖추어도 이를 법인의 주민등록으로 인정할 수 없기 때문입니다
+												(대법원 1997. 7. 11. 선고 96다7236 판결).
+												<br>
+												<i class="fa fa-caret-right"></i> 예외적으로, 한국토지주택공사와 주택사업을 목적으로 설립된
+												지방공사는 「주택임대차보호법」의
+												보호대상이 됩니다(「주택임대차보호법」 제3조제2항 후단 및 「주택임대차보호법 시행령」 제2조).
+											</p>
+											<h5>「주택임대차보호법」의 적용범위(물적 적용범위)</h5>
+											<p class="top">
+												「주택임대차보호법」은 주택, 즉 주거용 건물의 전부 또는 일부에 대해 임대차하는 경우에 적용되고
+												그 임차주택의 일부를 주거 외의 목적으로 사용하는 경우에도 적용됩니다(「주택임대차보호법」 제2조).
+												<br>
+												「주택임대차보호법」은 전세권등기를 하지 않은 전세계약(미등기 전세)에도
+												적용됩니다(「주택임대차보호법」 제12조).
+												<br>
+												<i class="fa fa-caret-right"></i> 다만, 일시 사용을 위한 임대차임이 명백한
+												경우에는 「주택임대차보호법」이
+												적용되지 않습니다(「주택임대차보호법」 제11조).
+											</p>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+												href="#collapse2">대항력과 우선변제권</a>
+										</h4>
+										<div id="collapse2" class="panel-collapse collapse">
+											<div class="panel-body">
+												<h5 class="first">대항력</h5>
+												<p class="top">
+													“대항력”이란 임차인이 제3자, 즉 임차주택의 양수인, 임대할 권리를 승계한 사람, 그 밖에 임차주택에 관해 이해관계를
+													가지고 있는 사람에게 임대차의 내용을 주장할 수 있는 법률상의 힘을 말합니다(「주택임대차보호법」 제3조제1항).
+												</p>
+												<h5>※ 대항력 관련 판례</h5>
+												<p class="top">
+													대항력을 취득한 임차인이 그 가족과 함께 일시적이나마 주민등록을 다른 곳으로 이전하면 전체적으로나 종국적으로 주민등록을
+													이탈한 것이므로 대항력은 전출로 인해 소멸되고, 그 후 임차인이 다시 임차주택의 주소로 전입신고를 하였더라도 소멸했던
+													대항력이 회복되는 것이 아니라 새로운 전입신고를 한 때부터 새로운 대항력을 취득하는 것입니다(대법원 1998.1.23.
+													선고 97다43468 판결).
+												</p>
+												<p class="top">
+													대항력을 취득한 임차인이 그 가족과 함께 그 주택에 대한 점유를 계속하고 있으면서 그 가족의 주민등록을 그대로 둔 채
+													임차인만 주민등록을 일시적으로 옮긴 경우라면, 전체적으로나 종국적으로 주민등록의 이탈이라고 볼 수 없으므로 제3자에 대한
+													대항력을 상실하지 않습니다(대법원 1996.1.26. 선고 95다30338 판결).
+												</p>
+												<p class="top">
+													효력발생 시기
+													<br>
+													<i class="fa fa-caret-right"></i> 대항력은 임차인이 주택의 인도와 주민등록을 마친 때에 그 다음
+													날부터 제3자에 대하여 효력이 생기고, 전입신고를 한 때에 주민등록을 마친 것으로 봅니다(「주택임대차보호법」
+													제3조제1항).
+												</p>
+												<h5>우선변제권</h5>
+												<p class="top">
+													 “우선변제권”이란 임차주택이 경매 또는 공매되는 경우에 임차주택의 환가대금에서 후순위권리자나 그 밖의 채권자보다
+													우선하여 보증금을 변제받을 권리를 말합니다(「주택임대차보호법」 제3조의2제2항).
+												</p>
+												<p class="top">
+													요권<br>
+													우선변제권은 임차인이 ① 대항요건(주택의 인도 및 전입신고)과 ② 임대차계약증서상의 확정일자를 갖춘 경우에
+													취득됩니다(「주택임대차보호법」 제3조의2제2항).
+												</p>
+												<p class="bottom">
+													※ “확정일자”란 증서가 작성된 날짜에 주택임대차계약서가 존재하고 있음을 증명하기 위해 법률상 인정되는 일자를
+													말합니다(대법원 1998. 10. 2. 선고 98다28879 판결).
+												</p>
+												<h5>보증금 중 일정액의 보호(최우선변제권)</h5>
+												<p class="top">
+													임차인이 비록 확정일자가 늦어 선순위로 변제를 받지 못하는 경우라도 임차주택에 대하여 선순위담보권자의 경매신청 등기 전에
+													대항력[① 주택의 인도 ,② 주민등록(전입신고)]을 갖춘 경우에는 보증금 중 일정액을 다른 담보물권자보다 우선하여 변제받을
+													권리가 있습니다(「주택임대차보호법」 제3조제1항 및 제8조제1항).
+												</p>
+												<p class="top">
+													<i class="fa fa-caret-right"></i> 이에 따라 우선변제를 받을 임차인 및 보증금 중 일정액의
+													범위와 기준은 주택임대차위원회의 심의를 거쳐 다음 구분에 따른 금액 이하로 합니다. 다만, 보증금 중 일정액의 범위와
+													기준은 주택가액(대지의 가액을 포함)의 2분의 1을 넘지 못합니다(「주택임대차보호법」
+													제8조제3항, 「주택임대차보호법 시행령」 제10조제1항 및 제11조).
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+												href="#collapse3">임차권등기명령제도</a>
+										</h4>
+
+										<div id="collapse3" class="panel-collapse collapse">
+											<div class="panel-body">
+												<h5 class="" first="">임차권등기명령제도의 의의</h5>
+												<p class="top">
+													 “임차권등기명령제도”란 임대차가 종료된 후 보증금을 반환받지 못한 임차인이 이사를 가려해도 이사를 가게 되면
+													주민등록의 계속성과 주택인도의 원칙상 대항력을 잃게 되어 이사를 갈 수 없는 문제가 있기 때문에 임차인의 보호를 위하여
+													임차인이 임대차가 종료된 후 보증금을 반환받지 못한 경우에 법원에 임차권등기명령을 신청하여 임차권 등기가 되면 보증금을
+													받지 않고 주소를 옮겨도 대항력 또는 우선변제권이 유지되어 마음 놓고 이사를 갈 수 있도록 보완한
+													제도입니다(『대한법률구조공단, 홈페이지 법률정보』 참조).
+												</p>
+												<h5>신청요건 및 방법</h5>
+												<p class="top">
+													① 임대차가 끝난 후 <br>
+													② 보증금이 반환되지 않은 경우 임차인은 임차주택의 소재지를 관할하는 지방법원·지방법원지원 또는 시·군 법원에
+													임차권등기명령을 신청할 수 있습니다(「주택임대차보호법」 제3조의3제1항).
+												</p>
+												<h5>임차권 등기의 효력</h5>
+												<p class="top">
+													임차인은 임차권등기명령의 집행에 따른 임차권등기를 마치면 대항력과 우선변제권을 취득합니다. 다만, 임차인이 임차권등기
+													이전에 이미 대항력이나 우선변제권을 취득한 경우에는 그 대항력이나 우선변제권은 그대로 유지되며, 임차권등기 이후에는
+													대항요건을 상실하더라도 이미 취득한 대항력이나 우선변제권을 상실하지 않습니다(「주택임대차보호법」 제3조의3제5항).
+													<br>
+													임차권등기명령의 집행에 따른 임차권등기가 끝난 주택(임대차의 목적이 주택의 일부분인 경우에는 해당 부분으로 한정)을 그
+													이후에 임차한 임차인은 우선변제를 받을 권리가 없습니다(「주택임대차보호법」 제3조의3제6항).
+												</p>
+												<h5>비용의 청구</h5>
+												<p class="top">
+													임차인은 위의 규정에 따른 임차권등기명령의 신청과 그에 따른 임차권등기와 관련하여 든 비용을 임대인에게 청구할 수
+													있습니다(「주택임대차보호법」 제3조의3제8항).
+												</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="panel panel-default">
+										<h4 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+												href="#collapse4">임대차기간, 묵시적 갱신 및 <em
+													class="visible-xs-block"></em>차임증감청구권 등</a>
+										</h4>
+										<div id="collapse4" class="panel-collapse collapse">
+											<div class="panel-body">
+												<h5 class="first">최단존속기간의 보장</h5>
+												<p class="top">
+													임대인이 임대차기간이 끝나기 6개월 전부터 1개월 전까지의 기간에 임차인에게 갱신거절(更新拒絶)의 통지를 하지 않거나
+													계약조건을 변경하지 않으면 갱신하지 않는다는 뜻의 통지를 하지 않은 경우에는 그 기간이 끝난 때에 전 임대차와 동일한
+													조건으로 다시 임대차한 것으로 봅니다. 임차인이 임대차기간이 끝나기 1개월 전까지 통지하지 않은 경우에도 또한
+													같습니다(「주택임대차보호법」 제6조제1항).
+												</p>
+												<p class="bottom">
+													※ 다만, 2기(期)의 차임액(借賃額)에 달하도록 연체하거나 그 밖에 임차인으로서의 의무를 현저히 위반한 임차인에 대하여는
+													이를 적용하지 않습니다(「주택임대차보호법」 제6조제3항).
+												</p>
+												<p class="top">
+													이 경우 임대차의 존속기간은 2년으로 봅니다. 그러나 계약이 갱신된 경우 임차인은 언제든지 임대인에게 계약해지(契約解止)를
+													통지할 수 있으며, 이러한 해지는 임대인이 그 통지를 받은 날부터 3개월이 지나면 그 효력이 발생합니다(「주택임대차보호법」
+													제6조제2항 및 제6조의2).
+												</p>
+												<h5>차임 등의 증감청구권</h5>
+												<p class="top">
+													당사자는 약정한 차임이나 보증금이 임차주택에 관한 조세, 공과금, 그 밖의 부담의 증감이나 경제사정의 변동으로 인하여
+													적절하지 않게 된 때에는 장래에 대하여 그 증감을 청구할 수 있습니다. 다만, 증액의 경우에는 약정한 차임등의 20분의
+													1의 금액을 초과하지 못합니다(「주택임대차보호법」 제7조 및 「주택임대차보호법 시행령」 제8조제1항).
+													<br>
+													이러한 증액청구는 임대차계약 또는 약정한 차임등의 증액이 있은 후 1년 이내에는 하지 못합니다(「주택임대차보호법 시행령」
+													제8조제2항).
+												</p>
+												<h5>임차권의 승계</h5>
+												<p class="top">
+													임차인이 상속인 없이 사망한 경우에는 그 주택에서 가정공동생활을 하던 사실상의 혼인 관계에 있는 자가 임차인의 권리와
+													의무를 승계합니다(「주택임대차보호법」 제9조제1항).
+												</p>
+												<p class="top">
+													임차인이 사망한 때에 사망 당시 상속인이 그 주택에서 가정공동생활을 하고 있지 않은 경우에는 그 주택에서 가정공동생활을
+													하던 사실상의 혼인 관계에 있는 자와 2촌 이내의 친족이 공동으로 임차인의 권리와 의무를 승계합니다(「주택임대차보호법」
+													제9조제2항).
+												</p>
+												<p class="top">
+													<i class="fa fa-caret-right"></i> 다만, 임차인이 사망한 후 1개월 이내에 임대인에게 위의 승계
+													대상자가 반대의사를 표시한 경우에는 권리와 의무를 승계하지 않습니다(「주택임대차보호법」 제9조제3항).
+												</p>
+												<p class="top">
+													위의 경우에 임대차 관계에서 생긴 채권·채무는 임차인의 권리의무를 승계한 자에게 귀속됩니다(「주택임대차보호법」
+													제9조제4항).
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //페이지 내용 -->
+
+		</main>
+		<!-- // 컨텐츠 -->
+
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="../include/Footer.html"></div>
+		<!-- // HEADER INCLUDE -->
+	</div>
+
+	<!-- 개발시 제거 -->
+	<script>
+		includeHTML();
+	</script>
+	<!-- // 개발시 제거 -->
+
+</body>
+
+</html>

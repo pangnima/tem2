@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- 메타태그 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="subject" content="">
+	<meta name="keyword" content="">
+	<meta name="description" content="">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:domain" content="">
+
+	<meta property="og:site_name" content="$subject">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+
+	<!-- 타이틀 -->
+	<title>언론보도</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link rel="stylesheet" href="../css/fullpage.css" />
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- 스크립트 -->
+	<script src="../js/jQuery.js"></script>
+	<script src="../js/fullpage.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/common.js"></script>
+
+	<!-- HTML Include 개발시 제거 -->
+	<script>
+		function includeHTML() {
+			var z, i, elmnt, file, xhttp;
+			/* Loop through a collection of all HTML elements: */
+			z = document.getElementsByTagName("*");
+			for (i = 0; i < z.length; i++) {
+				elmnt = z[i];
+				/*search for elements with a certain atrribute:*/
+				file = elmnt.getAttribute("w3-include-html");
+				if (file) {
+					/* Make an HTTP request using the attribute value as the file name: */
+					xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function () {
+						if (this.readyState == 4) {
+							if (this.status == 200) {
+								elmnt.innerHTML = this.responseText;
+							}
+							if (this.status == 404) {
+								elmnt.innerHTML = "Page not found.";
+							}
+							/* Remove the attribute, and call this function once more: */
+							elmnt.removeAttribute("w3-include-html");
+							includeHTML();
+						}
+					}
+					xhttp.open("GET", file, true);
+					xhttp.send();
+					/* Exit the function: */
+					return;
+				}
+			}
+		}
+	</script>
+	<!--//  HTML Include 개발시 제거 -->
+</head>
+
+
+<body>
+	<div id="wrap">
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="../include/Header.html"></div>
+		<!-- // HEADER INCLUDE -->
+
+		<!-- 컨텐츠 -->
+		<main id="page-container" class="sub-container">
+			<!-- 서브 비주얼 -->
+			<div class="sub-visual">
+				<figure class="figure">
+					<img src="/images/sub/sub-visual.jpg" class="figure-img img-fluid" alt="">
+					<figcaption class="figure-caption">
+						<strong>언론보도</strong>
+						<span>법무법인 소빅은 어떤 상황에서도 의뢰인의 편에 서겠습니다.</span>
+					</figcaption>
+				</figure>
+			</div>
+
+			<!-- 페이지 내용 -->
+			<div class="sub-contents">
+				<div class="container">
+					<div class="news-list">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="search-box">
+									<div class="input-group">
+										<input type="text" aria-label="First name" class="form-control">
+										<button type="button" class="btn btn-primary">검색</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<ul class="media-coverage">
+								<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+									<a href="#">
+										<figure class="figure">
+											<img src="../images/sub/thumb.jpg" alt="썸네일이미지">
+										</figure>
+										<div class="text-box">
+											<h3 class="title">몰래 찍은 사진까지 버젓이 저장되어 있는데, 무죄판결?</h3>
+											<p class="desc">과거에 ‘몰래카메라’라고 하면 누군가를 속여서 재밌는 상황을 연출하는 것으로, 부정적인</p>
+											<span class="date">2018-10-12</span>
+										</div>
+									</a>
+								</li>
+								<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+									<a href="#">
+										<figure class="figure">
+											<img src="../images/sub/thumb.jpg" alt="썸네일이미지">
+										</figure>
+										<div class="text-box">
+											<h3 class="title">몰래 찍은 사진까지 버젓이 저장되어 있는데, 무죄판결?</h3>
+											<p class="desc">과거에 ‘몰래카메라’라고 하면 누군가를 속여서 재밌는 상황을 연출하는 것으로, 부정적인</p>
+											<span class="date">2018-10-12</span>
+										</div>
+									</a>
+								</li>
+								<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+									<a href="#">
+										<figure class="figure">
+											<img src="../images/sub/thumb.jpg" alt="썸네일이미지">
+										</figure>
+										<div class="text-box">
+											<h3 class="title">몰래 찍은 사진까지 버젓이 저장되어 있는데, 무죄판결?</h3>
+											<p class="desc">과거에 ‘몰래카메라’라고 하면 누군가를 속여서 재밌는 상황을 연출하는 것으로, 부정적인</p>
+											<span class="date">2018-10-12</span>
+										</div>
+									</a>
+								</li>
+								<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+									<a href="#">
+										<figure class="figure">
+											<img src="../images/sub/thumb.jpg" alt="썸네일이미지">
+										</figure>
+										<div class="text-box">
+											<h3 class="title">몰래 찍은 사진까지 버젓이 저장되어 있는데, 무죄판결?</h3>
+											<p class="desc">과거에 ‘몰래카메라’라고 하면 누군가를 속여서 재밌는 상황을 연출하는 것으로, 부정적인</p>
+											<span class="date">2018-10-12</span>
+										</div>
+									</a>
+								</li>
+								<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+									<a href="#">
+										<figure class="figure">
+											<img src="../images/sub/thumb.jpg" alt="썸네일이미지">
+										</figure>
+										<div class="text-box">
+											<h3 class="title">몰래 찍은 사진까지 버젓이 저장되어 있는데, 무죄판결?</h3>
+											<p class="desc">과거에 ‘몰래카메라’라고 하면 누군가를 속여서 재밌는 상황을 연출하는 것으로, 부정적인</p>
+											<span class="date">2018-10-12</span>
+										</div>
+									</a>
+								</li>
+								<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+									<a href="#">
+										<figure class="figure">
+											<img src="../images/sub/thumb.jpg" alt="썸네일이미지">
+										</figure>
+										<div class="text-box">
+											<h3 class="title">몰래 찍은 사진까지 버젓이 저장되어 있는데, 무죄판결?</h3>
+											<p class="desc">과거에 ‘몰래카메라’라고 하면 누군가를 속여서 재밌는 상황을 연출하는 것으로, 부정적인</p>
+											<span class="date">2018-10-12</span>
+										</div>
+									</a>
+								</li>
+								<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+									<a href="#">
+										<figure class="figure">
+											<img src="../images/sub/thumb.jpg" alt="썸네일이미지">
+										</figure>
+										<div class="text-box">
+											<h3 class="title">몰래 찍은 사진까지 버젓이 저장되어 있는데, 무죄판결?</h3>
+											<p class="desc">과거에 ‘몰래카메라’라고 하면 누군가를 속여서 재밌는 상황을 연출하는 것으로, 부정적인</p>
+											<span class="date">2018-10-12</span>
+										</div>
+									</a>
+								</li>
+								<li class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+									<a href="#">
+										<figure class="figure">
+											<img src="../images/sub/thumb.jpg" alt="썸네일이미지">
+										</figure>
+										<div class="text-box">
+											<h3 class="title">몰래 찍은 사진까지 버젓이 저장되어 있는데, 무죄판결?</h3>
+											<p class="desc">과거에 ‘몰래카메라’라고 하면 누군가를 속여서 재밌는 상황을 연출하는 것으로, 부정적인</p>
+											<span class="date">2018-10-12</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //페이지 내용 -->
+
+		</main>
+		<!-- // 컨텐츠 -->
+
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="../include/Footer.html"></div>
+		<!-- // HEADER INCLUDE -->
+	</div>
+
+	<!-- 개발시 제거 -->
+	<script>
+		includeHTML();
+	</script>
+	<!-- // 개발시 제거 -->
+
+</body>
+
+</html>
