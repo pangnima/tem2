@@ -36,6 +36,7 @@
 	<!-- 스크립트 -->
 	<script src="./js/jQuery.js"></script>
 	<script src="./js/fullpage.min.js"></script>
+	<script src="./js/scrolloverflow.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/common.js"></script>
 
@@ -125,34 +126,33 @@
 								제공합니다.
 							</p>
 						</div>
-						<div class="row">
-							<div class="col-md-4 col-xs-6">
-								<div class="special-box box01">
-									<a href="content?s=specialty21">
-										<p class="top-txt">가압류</p>
-										<p class="hidden-txt"
-											style="display: none; height: 78px; padding-top: 16px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+						<div class="row work-category">
+							<div class="col-md-4">
+								<div class="cate-type type-1">
+									<a href="#">
+										<p class="cate-title">가압류</p>
+										<p class="hidden-txt">
 											채권자의 부당한 피해를 방지하기 위해 <br>
 											신청과 요건을 확인하세요.
 										</p>
 									</a>
 								</div>
 							</div>
-							<div class="col-md-4 col-xs-6">
-								<div class="special-box box02">
-									<a href="content?s=specialty422">
-										<p class="top-txt">소유권</p>
-										<p class="hidden-txt" style="display: none;">
+							<div class="col-md-4">
+								<div class="cate-type type-1">
+									<a href="#">
+										<p class="cate-title">소유권</p>
+										<p class="hidden-txt">
 											부동산 계약부터 해제까지 <br>
 											미리 알고 대비하세요
 										</p>
 									</a>
 								</div>
 							</div>
-							<div class="col-md-4 col-xs-6">
-								<div class="special-box box03">
-									<a href="content?s=specialty323">
-										<p class="top-txt">명의신탁</p>
+							<div class="col-md-4">
+								<div class="cate-type type-2">
+									<a href="#">
+										<p class="cate-title">명의신탁</p>
 										<p class="hidden-txt">
 											주택임대차, 상가임대차 <br>
 											계약시 분쟁을 확인하세요.
@@ -160,22 +160,21 @@
 									</a>
 								</div>
 							</div>
-							<div class="col-md-4 col-xs-6">
-								<div class="special-box box04">
-									<a href="content?s=specialty225">
-										<p class="top-txt">매매계약</p>
-										<p class="hidden-txt"
-											style="display: none; height: 78px; padding-top: 16px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+							<div class="col-md-4">
+								<div class="cate-type type-3">
+									<a href="#">
+										<p class="cate-title">매매계약</p>
+										<p class="hidden-txt">
 											계약상의 하자, 이중매매, 이행지체등 <br>
 											법정해제의 발생요건을 확인하세요.
 										</p>
 									</a>
 								</div>
 							</div>
-							<div class="col-md-4 col-xs-6">
-								<div class="special-box box05">
-									<a href="content?s=specialty624">
-										<p class="top-txt">재건축</p>
+							<div class="col-md-4">
+								<div class="cate-type type-4">
+									<a href="#">
+										<p class="cate-title">재건축</p>
 										<p class="hidden-txt">
 											재건축사업에 필요한<br>
 											진행과정을 확인하세요.
@@ -183,10 +182,10 @@
 									</a>
 								</div>
 							</div>
-							<div class="col-md-4 col-xs-6">
-								<div class="special-box box06">
-									<a href="content?s=specialty526">
-										<p class="top-txt">주택임대차보호</p>
+							<div class="col-md-4">
+								<div class="cate-type type-5">
+									<a href="#">
+										<p class="cate-title">주택임대차보호</p>
 										<p class="hidden-txt">
 											경제적 약자인 임차인의 권리를 <br>
 											확인하세요.
@@ -206,11 +205,9 @@
 							</p>
 						</div>
 						<div class="row">
-							<div class="col-sm-6 col-xs-12">
-								<div class="bd-left" style="left: 0px; opacity: 1;">
-									<a href="board?s=private51">
-										<h4>상담신청 현황</h4>
-									</a>
+							<div class="col-sm-6">
+								<div class="bd-left">
+									<a href="#"><h4>상담신청 현황</h4></a>
 									<ul id="privateList">
 										<li id="0fglpu" class="handcursor">농지를 매수하려고 합니다.</li>
 										<li id="0awl9" class="handcursor">아파트 계약시 대리인에 관해서</li>
@@ -221,11 +218,9 @@
 									</ul>
 								</div>
 							</div>
-							<div class="col-sm-6 col-xs-12">
-								<div class="bd-right" style="left: 0px; opacity: 1;">
-									<a href="board?s=case40">
-										<h4>법령사례</h4>
-									</a>
+							<div class="col-sm-6">
+								<div class="bd-right">
+									<a href="#"><h4>법령사례</h4></a>
 									<ul id="caseList">
 										<li id="8gs0wq" class="handcursor">토지거래허가</li>
 										<li id="zl6sdj" class="handcursor">매매계약금</li>
@@ -243,35 +238,39 @@
 					<div class="container">
 						<div class="row">
 							<h3 class="main-tit">위치 및 상담안내</h3>
-							<p class="main-txt">
-								<strong>법무법인 소빅</strong>은 의뢰인의 정당한 인권을 찾아드립니다.
-							</p>
+							<p class="main-txt"><strong>법무법인 소빅</strong>은 의뢰인의 정당한 인권을 찾아드립니다.</p>
 						</div>
 						<div class="row">
-							<div class="col-sm-4 col-xs-12">
-								<div class="box info01">
-									<h4 class="box-tit">고객센터</h4>
-									<p class="info">
+							<div class="col-sm-4 mt-3">
+								<div class="info-box">
+									<h4 class="info-title">
+										<img src="./images/main/bg_sct05_01.png" alt="">
+										고객센터
+									</h4>
+									<hr class="line">
+									<p class="info-text">
 										PHONE 070-4165-9497 <br>
 										raonpartners@gmail.com <br>
 										<span>KAKAO : 플러스친구 검색 “법무법인 소빅”</span>
 									</p>
 								</div>
 							</div>
-							<div class="col-sm-4 col-xs-12">
-								<div class="box info02">
-									<h4 class="box-tit">상담시간</h4>
-									<p class="info">
+							<div class="col-sm-4 mt-3">
+								<div class="info-box">
+									<h4 class="info-title"><img src="./images/main/bg_sct05_03.png" alt="">상담시간</h4>
+									<hr class="line">
+									<p class="info-text">
 										AM 09:00 - PM 18:00 <br>
 										(Lunch Time : 12:00 - 13:00) <br>
 										※ 주말 및 휴일, 공휴일은 쉽니다
 									</p>
 								</div>
 							</div>
-							<div class="col-sm-4 col-xs-12">
-								<div class="box info03">
-									<h4 class="box-tit">찾아오시는길</h4>
-									<p class="info">
+							<div class="col-sm-4 mt-3">
+								<div class="info-box">
+									<h4 class="info-title"><img src="./images/main/bg_sct05_03.png" alt="">찾아오시는길</h4>
+									<hr class="line">
+									<p class="info-text">
 										서울특별시 종로구 삼봉로 57<br>호수빌딩 9층 
 									</p>
 								</div>
@@ -279,39 +278,13 @@
 						</div>
 					</div>
 
-					<!-- 푸터 -->
-					<div class="footer">
-						<div class="f-wrap">
-							<a href="https://www.ccourt.go.kr" target="_blank"><img src="./images/main/f_link01.png" alt="법률링크"></a>
-							<a href="http://www.moleg.go.kr" target="_blank"><img src="./images/main/f_link02.png" alt="법률링크"></a>
-							<a href="https://www.klac.or.kr" target="_blank"><img src="./images/main/f_link03.png" alt="법률링크"></a>
-							<a href="http://www.iros.go.kr" target="_blank"><img src="./images/main/f_link04.png" alt="법률링크"></a>
-						</div>
-						<div class="container">
-							<div class="f-logo">
-								<img src="./images/main/footer-logo.jpg" alt="raon">
-							</div>
-							<div class="footer-box">
-								<ul>
-									<li><a href="#" data-toggle="modal" data-target="#termsModal">면책공고</a></li>
-									<li><a href="#" data-toggle="modal" data-target="#privacyModal">이메일주소 무단수집 거부</a></li>
-								</ul>
-								<p>주소 : 서울시 중구 청계천로 40 한국콘텐츠진흥원 CKL기업지원센터 1405 | 주식회사 라온파트너스 | 사업자등록번호 104-86-58680</p>
-								<p>대표 : 이재진 | <a href="tel:070-4165-9497">전화번호 070-4165-9497</a> </p>
-								<p>개인정보관리책임자 : <a href="mailto:raonpartners@gmail.com">이재진 (raonpartners@gmail.com)</a></p>
-								<p class="copyright">Copyright(C)Raonpartners 2018 All Right Reserved.</p>
-							</div>
-						</div>
-					</div>
+					<!-- foooter INCLUDE -->
+					<div w3-include-html="./include/Footer.html"></div>
+					<!-- // foooter INCLUDE -->
 				</div>
 			</div>
 		</main>
 		<!-- //컨텐츠 -->
-
-
-		<!-- HEADER INCLUDE -->
-		<div w3-include-html="./include/Footer.html"></div>
-		<!-- // HEADER INCLUDE -->
 	</div>
 	<!-- 개발시 제거 -->
 	<script>

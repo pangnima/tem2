@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- 메타태그 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="subject" content="">
+	<meta name="keyword" content="">
+	<meta name="description" content="">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:domain" content="">
+
+	<meta property="og:site_name" content="$subject">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+
+	<!-- 타이틀 -->
+	<title>전화상담</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link rel="stylesheet" href="../css/fullpage.css" />
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- 스크립트 -->
+	<script src="../js/jQuery.js"></script>
+	<script src="../js/fullpage.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/common.js"></script>
+
+	<!-- HTML Include 개발시 제거 -->
+	<script>
+		function includeHTML() {
+			var z, i, elmnt, file, xhttp;
+			/* Loop through a collection of all HTML elements: */
+			z = document.getElementsByTagName("*");
+			for (i = 0; i < z.length; i++) {
+				elmnt = z[i];
+				/*search for elements with a certain atrribute:*/
+				file = elmnt.getAttribute("w3-include-html");
+				if (file) {
+					/* Make an HTTP request using the attribute value as the file name: */
+					xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function () {
+						if (this.readyState == 4) {
+							if (this.status == 200) {
+								elmnt.innerHTML = this.responseText;
+							}
+							if (this.status == 404) {
+								elmnt.innerHTML = "Page not found.";
+							}
+							/* Remove the attribute, and call this function once more: */
+							elmnt.removeAttribute("w3-include-html");
+							includeHTML();
+						}
+					}
+					xhttp.open("GET", file, true);
+					xhttp.send();
+					/* Exit the function: */
+					return;
+				}
+			}
+		}
+	</script>
+	<!--//  HTML Include 개발시 제거 -->
+</head>
+
+
+<body>
+	<div id="wrap">
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="../include/Header.html"></div>
+		<!-- // HEADER INCLUDE -->
+
+		<!-- 컨텐츠 -->
+		<main id="page-container" class="sub-container">
+			<!-- 서브 비주얼 -->
+			<div class="sub-visual">
+				<figure class="figure">
+					<img src="/images/sub/sub-visual.jpg" class="figure-img img-fluid" alt="">
+					<figcaption class="figure-caption">
+						<strong>전화상담</strong>
+						<span>법무법인 소빅은 어떤 상황에서도 의뢰인의 편에 서겠습니다.</span>
+					</figcaption>
+				</figure>
+			</div>
+
+			<!-- 페이지 내용 -->
+			<div class="sub-contents">
+				<div class="container">
+					<div class="call-center">
+						<!-- 상단 -->
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="contact-box">
+									<img src="../images/sub/contact01.jpg" alt="입력">
+									<p>상담 내용을 <strong>꼼꼼하고 정확하게 <br>입력</strong>해주세요.</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="contact-box">
+									<img src="../images/sub/contact02.jpg" alt="상담이미지">
+									<p>담당 전문변호사가 <strong>성심껏 상담을 <br>준비하겠습니다.</strong></p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="contact-box">
+									<img src="../images/sub/contact03.jpg" alt="연락이미지">
+									<p>담당 전문변호사가 <strong>의뢰인에게 <br>직접 연락드립니다.</strong></p>
+								</div>
+							</div>
+						</div>
+						<!-- //상단 -->
+
+						<!-- 하단 -->
+						<div class="row mt-5">
+							<div class="col-sm-6">
+								<div class="row">
+									<div class="col-sm-4 form-group"><input type="text" class="form-control"></div>
+									<div class="col-sm-4 form-group"><input type="text" class="form-control"></div>
+									<div class="col-sm-4 form-group"><input type="text" class="form-control"></div>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="form-group">
+											<textarea class="form-control" rows="8"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="agree-box">
+									<h3 class="agree-title">개인정보 수집 및 이용에 대한 안내</h3>
+									<ol class="agree-list">
+										<li>1. 개인정보 수집 목적 : 상담 및 답변을 위한 수집</li>
+										<li>2. 개인정보 수집 항목 : 담당자명, 전화번호, 이메일</li>
+										<li>3. 개인정보 보유기간 : 개인정보 수집 및 이용목적 외에는 절대 사용하지 아니하며, 상담 이후에는 수집 정보 파기</li>
+										<li>4. 이용자는 개인정보 수집 동의를 거부할 수 있습니다.<Br>다만, 거부 시 문의사항의 답변에 제한이 있을 수 있습니다.</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+
+						<div class="text-center mt-5">
+							<button type="button" class="btn btn-lg btn-primary">문의하기</button>
+						</div>
+					</div>
+					<!-- // 하단 -->
+				</div>
+			</div>
+	</div>
+	<!-- //페이지 내용 -->
+
+	</main>
+	<!-- // 컨텐츠 -->
+
+	<!-- HEADER INCLUDE -->
+	<div w3-include-html="../include/Footer.html"></div>
+	<!-- // HEADER INCLUDE -->
+	</div>
+
+	<!-- 개발시 제거 -->
+	<script>
+		includeHTML();
+	</script>
+	<!-- // 개발시 제거 -->
+
+</body>
+
+</html>

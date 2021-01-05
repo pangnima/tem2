@@ -22,7 +22,7 @@ $(function () {
 		navigation: true,
 		navigationPosition: 'right',
 		sectionSelector: '.section',
-		// scrollOverflow: true,
+		scrollOverflow: true,
 		afterLoad: function (anchorLink, index) {
 			if (index == 5) {
 				$(".bd-left").stop(true).delay(50).animate({
@@ -55,7 +55,7 @@ $(function () {
 	});
 
 	if ($(window).width() >= 767) {
-		$(".special-box").hover(function () {
+		$(".cate-type").hover(function () {
 			$(this).find(".hidden-txt").stop(true).slideToggle("fast");
 		});
 	}

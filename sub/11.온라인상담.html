@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- 메타태그 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="subject" content="">
+	<meta name="keyword" content="">
+	<meta name="description" content="">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:domain" content="">
+
+	<meta property="og:site_name" content="$subject">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+
+	<!-- 타이틀 -->
+	<title>온라인상담</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link rel="stylesheet" href="../css/fullpage.css" />
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- 스크립트 -->
+	<script src="../js/jQuery.js"></script>
+	<script src="../js/fullpage.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/common.js"></script>
+
+	<!-- HTML Include 개발시 제거 -->
+	<script>
+		function includeHTML() {
+			var z, i, elmnt, file, xhttp;
+			/* Loop through a collection of all HTML elements: */
+			z = document.getElementsByTagName("*");
+			for (i = 0; i < z.length; i++) {
+				elmnt = z[i];
+				/*search for elements with a certain atrribute:*/
+				file = elmnt.getAttribute("w3-include-html");
+				if (file) {
+					/* Make an HTTP request using the attribute value as the file name: */
+					xhttp = new XMLHttpRequest();
+					xhttp.onreadystatechange = function () {
+						if (this.readyState == 4) {
+							if (this.status == 200) {
+								elmnt.innerHTML = this.responseText;
+							}
+							if (this.status == 404) {
+								elmnt.innerHTML = "Page not found.";
+							}
+							/* Remove the attribute, and call this function once more: */
+							elmnt.removeAttribute("w3-include-html");
+							includeHTML();
+						}
+					}
+					xhttp.open("GET", file, true);
+					xhttp.send();
+					/* Exit the function: */
+					return;
+				}
+			}
+		}
+	</script>
+	<!--//  HTML Include 개발시 제거 -->
+</head>
+
+
+<body>
+	<div id="wrap">
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="../include/Header.html"></div>
+		<!-- // HEADER INCLUDE -->
+
+		<!-- 컨텐츠 -->
+		<main id="page-container" class="sub-container">
+			<!-- 서브 비주얼 -->
+			<div class="sub-visual">
+				<figure class="figure">
+					<img src="/images/sub/sub-visual.jpg" class="figure-img img-fluid" alt="">
+					<figcaption class="figure-caption">
+						<strong>온라인상담</strong>
+						<span>법무법인 소빅은 어떤 상황에서도 의뢰인의 편에 서겠습니다.</span>
+					</figcaption>
+				</figure>
+			</div>
+
+			<!-- 페이지 내용 -->
+			<div class="sub-contents">
+				<div class="container">
+					<div class="news-list">
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="search-box">
+									<div class="input-group">
+										<input type="text" aria-label="First name" class="form-control">
+										<button type="button" class="btn btn-primary">검색</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<!-- 게시판 -->
+								<div class="table-wrap">
+									<table class="table">
+										<colgroup>
+											<col class="number" style="width:80px">
+											<col>
+											<col class="writer" style="width:100px">
+											<col class="writer" style="width:100px">
+											<col style="width:110px">
+										</colgroup>
+										<thead>
+											<tr>
+												<th class="number">번호</th>
+												<th class="title">제목</th>
+												<th class="state">상태</th>
+												<th class="writer">작성자</th>
+												<th class="data">등록일</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="number">6</td>
+												<td class="title"><a href="#">소빅사이트 GRAND OPEN</a></td>
+												<td class="state">미답변</td>
+												<td class="writer">관리자</td>
+												<td class="date">2018-10-12</td>
+											</tr>
+											<tr>
+												<td class="number">5</td>
+												<td class="title"><a href="#">아파트 계약시 대리인에 관해서</a></td>
+												<td class="state">미답변</td>
+												<td class="writer">관리자</td>
+												<td class="date">2018-10-12</td>
+											</tr>
+											<tr>
+												<td class="number">4</td>
+												<td class="title"><a href="#">매매계약서 작성중 누락부분에 대해서</a></td>
+												<td class="state">미답변</td>
+												<td class="writer">관리자</td>
+												<td class="date">2018-10-12</td>
+											</tr>
+											<tr>
+												<td class="number">3</td>
+												<td class="title"><a href="#">매매계약시 법적서류 문의해요</a></td>
+												<td class="state">미답변</td>
+												<td class="writer">관리자</td>
+												<td class="date">2018-10-12</td>
+											</tr>
+											<tr>
+												<td class="number">2</td>
+												<td class="title"><a href="#">계약만료전에 문제가 생겼습니다.</a></td>
+												<td class="state">미답변</td>
+												<td class="writer">관리자</td>
+												<td class="date">2018-10-12</td>
+											</tr>
+											<tr>
+												<td class="number">1</td>
+												<td class="title"><a href="#">부동산 가압류 문의 합니다.</a></td>
+												<td class="state">미답변</td>
+												<td class="writer">관리자</td>
+												<td class="date">2018-10-12</td>
+											</tr>
+										</tbody>
+									</table>	
+								</div>
+								<div class="text-right mt-3">
+									<button type="button" class="btn btn-primary" id="btnWrite">상담하기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //페이지 내용 -->
+
+		</main>
+		<!-- // 컨텐츠 -->
+
+		<!-- HEADER INCLUDE -->
+		<div w3-include-html="../include/Footer.html"></div>
+		<!-- // HEADER INCLUDE -->
+	</div>
+
+	<!-- 개발시 제거 -->
+	<script>
+		includeHTML();
+	</script>
+	<!-- // 개발시 제거 -->
+
+</body>
+
+</html>
